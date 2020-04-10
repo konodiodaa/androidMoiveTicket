@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:showDividers="middle|beginning|end|none">
+
+        <Button
+            android:id="@+id/sort_by_distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/schedule"
+            android:text="Cinema" />
+
+        <View
+            android:id="@+id/div_view"
+            android:layout_width="3dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/sort_by_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/schedule"
+            android:text="Time" />
+
+        <View
+            android:id="@+id/div_view2"
+            android:layout_width="3dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/sort_by_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/schedule"
+            android:text="Price" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</LinearLayout>
